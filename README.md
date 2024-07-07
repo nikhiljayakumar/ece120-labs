@@ -1,5 +1,5 @@
-# ECE 120 (sp24) repo for NetID: nikhilj5
+# ECE 120 Labs
 
-GitHub username at initialization time: nikhiljayakumar
+Labs demonstrate work in Xilinx Vivado (Labs 3, 4, 5, 7) and LC-3 (Labs 9, 10, 11, 12).
 
-For next steps, please refer to the instructions provided by your course.
+To see lab descriptions, please navigate to the appropriate labs' README.
