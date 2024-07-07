@@ -1,0 +1,19 @@
+{
+    signal: [
+      	{name: 'refclk', wave: 'p..............'},
+        ['Inputs',
+            {name: 'rst_n', wave: '01.............'},
+  		    {name: 'clk', wave: '0..1.0.1.0.1.0'},
+            {name: 'T', wave: '0.1.0.1.0.....'}
+        ],
+        ['Outputs',
+            {name: 'A', wave: '0..1...0...1..'}, 
+            {name: 'P', wave: '0..........1..'}
+        ]
+	],
+    head: {
+       tick: 0,
+       every: 1
+    }
+}
+ 

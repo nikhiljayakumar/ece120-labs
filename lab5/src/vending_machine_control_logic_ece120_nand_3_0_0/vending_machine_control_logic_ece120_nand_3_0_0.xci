@@ -1,0 +1,46 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "vending_machine_control_logic_ece120_nand_3_0_0",
+    "cell_name": "ece120_nand_3_0",
+    "component_reference": "ece.illinois.edu:ece120:ece120_nand_3:1.0",
+    "ip_revision": "1",
+    "gen_directory": "./",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "vending_machine_control_logic_ece120_nand_3_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "artix7" } ],
+        "BASE_BOARD_PART": [ { "value": "xilinx.com:ac701:part0:1.4" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7a200t" } ],
+        "PACKAGE": [ { "value": "fbg676" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "./" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "." } ],
+        "SWVERSION": [ { "value": "2023.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "op1": [ { "direction": "in" } ],
+        "op2": [ { "direction": "in" } ],
+        "op3": [ { "direction": "in" } ],
+        "res": [ { "direction": "out" } ]
+      }
+    }
+  }
+}

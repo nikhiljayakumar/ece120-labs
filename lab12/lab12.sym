@@ -1,0 +1,19 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	LEFTSHIFTHEX      3007
+//	OUTERLOOP         300D
+//	INNERLOOP         3015
+//	BITONE            301E
+//	PRINT             3023
+//	DONE              3025
+//	FONTADDR          3026
+//	MASK              3027
+//	ROW               3028
+//	COL               3029
+//	FOUR              302A
+//	INIT              302B
+//	NEWLINE           3033
+//	NULTERM           3034
+

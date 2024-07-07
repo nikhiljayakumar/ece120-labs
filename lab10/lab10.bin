@@ -1,0 +1,32 @@
+0011 0000 0000 0000        ; x3000 - starting address of the program
+0101 001 001 1 00000       ; R1 is running sum set to zero
+1110 010 011111101         ; R2 set to x30FF (one before start of array)
+0001 011 010 1 01011       ; R3 set to x310A (end of array)
+0001 010 010 1 00001       ; R2 = R2 + 1
+1001 100 010 111111        ; R4 = not R2
+0001 100 100 0 00 011      ; R4 = R4 + R3 (-R2 + R3) checks if end of the array
+0000 010 000000111         ; If end of the array (R4 == 0) go to the next program
+0110 000 010 000000        ; R0 holds current array value, R0 <- mem[R2]
+0001 000 000 1 00000       ; R0 = R0 + 0 (initialize flags)
+0000 100 111111001         ; Branch if negative PC <- PC - 7
+0001 001 001 0 00 000      ; R1 = R1 + R0 adds to the running sum
+0000 111 111110111         ; Branch to next iteration (regardless of flags) PC <- PC - 9 
+
+0100 0000 0000 0000        ; mem[] = x4000
+0011 0001 1111 1111        ; mem[] = x31FF (used for second program)
+1011 001 111111101         ; store R1 in x4000
+
+0101 001 001 1 00000       ; set R1 to 0 (start of second program)
+0010 010 111111100         ; R2 set to x31FF
+0001 010 010 1 00001       ; R2  = R2 + 1
+0110 000 010 000000        ; R0 holds current val of array 
+0001 101 000 1 00001       ; R5 = R0 + 1
+0000 010 000000100         ; R1+1=0, R1=-1, end of array, branch to end of program
+0000 011 111111011         ; if R1 is positive or zero, iterate to the next element in array PC <- PC - 9
+0001 001 001 0 00 000      ; R1 = R1 + R0 adds to the running sum
+0000 111 111111001         ; Branch to next iteration (regardless of flags) PC <- PC - 7
+
+0100 0000 0000 0001        ; mem[] = x4100
+1011 001 111111110         ; Store R1 in x4100
+
+1111 0000 0010 0101        ; halt
